@@ -65,7 +65,7 @@ h2{
     border-bottom:1px SOLID #ffffff;
     border-right:1px SOLID #ffffff;
     background-color:#3d85c6;
-    text-align:left;
+    text-align:center;
     color:#ffffff;
     font-family:'Arial';
     font-size:12pt;
@@ -75,7 +75,7 @@ h2{
 .ritz .waffle .s7{
     border-bottom:1px SOLID #ffffff;
     background-color:#3d85c6;
-    text-align:left;
+    text-align:center;
     color:#ffffff;
     font-family:'Arial';
     font-size:12pt;
@@ -89,7 +89,7 @@ h2{
 .ritz .waffle .s9{
     border-bottom:1px SOLID #d9d9d9;
     background-color:#ffffff;
-    text-align:left;
+    text-align:center;
     color:#000000;
     font-family:'Arial';
     font-size:10pt;
@@ -99,7 +99,7 @@ h2{
 .ritz .waffle .s10{
     border-right:1px SOLID #ffffff;
     background-color:#3d85c6;
-    text-align:left;
+    text-align:center;
     color:#ffffff;
     font-family:'Arial';
     font-size:12pt;
@@ -108,7 +108,7 @@ h2{
 }
 .ritz .waffle .s11{
     background-color:#3d85c6;
-    text-align:left;
+    text-align:center;
     color:#ffffff;
     font-family:'Arial';
     font-size:12pt;
