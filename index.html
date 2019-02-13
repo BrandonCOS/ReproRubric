@@ -211,7 +211,7 @@
         <input type="button" value="Print this page" onclick="window.print();">
         <script>
             window.onload = function(){
-                var all = document.getElementsByTagName("td");
+                var all = document.getElementsByTagName("td").className += 's9';
                 for (var i=0;i<all.length;i++) {
                     all[i].onclick = inputClickHandler;
                 }
@@ -219,7 +219,7 @@
             function inputClickHandler(e){
                 e = e||window.event;
                 var tdElm = e.target||e.srcElement;
-                if(class == s9){
+                if(true){
                     tdElm.style.backgroundColor = '#00b5ef';
                 }
             }
