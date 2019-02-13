@@ -219,12 +219,10 @@
             function inputClickHandler(e){
                 e = e||window.event;
                 var tdElm = e.target||e.srcElement;
-                if(tdElm.style.backgroundColor == '#00b5ef'){
-                    tdElm.style.backgroundColor = null;
-                }
-                else{
+                if(tdElm.style.backgroundColor == ''){
                     tdElm.style.backgroundColor = '#00b5ef';
                 }
+                
             }
             $( document ).ready(function(){
                 $('#lnkPrint').click(function(){
