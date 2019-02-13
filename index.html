@@ -210,19 +210,27 @@
         </div>
         <input type="button" value="Print this page" onclick="window.print();">
         <script>
-            window.onload = function(){
+             window.onload = function(){
                 var all = document.getElementsByTagName("td");
                 for (var i=0;i<all.length;i++) {
                     all[i].onclick = inputClickHandler;
                 }
             };
-            if(tdElm.style.backgroundColor == 'rgb(0, 255, 0)'){
+            function inputClickHandler(e){
+                e = e||window.event;
+                var tdElm = e.target||e.srcElement;
+                if(tdElm.style.backgroundColor == 'rgb(0, 255, 0)'){
                     tdElm.style.backgroundColor = null;
                 }
                 else{
                     tdElm.style.backgroundColor = '#0f0';
                 }
             }
+            $( document ).ready(function(){
+                $('#lnkPrint').click(function(){
+                    window.print();
+                });
+            });
         </script>
     </body>
 </html>
