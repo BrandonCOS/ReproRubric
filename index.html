@@ -211,16 +211,16 @@
         <input type="button" value="Print this page" onclick="window.print();">
         <script>
             window.onload = function(){
-                var all = document.getElementsByTagName("td").className += 's9';
+                var all = document.getElementsByTagName("td");
                 for (var i=0;i<all.length;i++) {
                     all[i].onclick = inputClickHandler;
                 }
             };
-            function inputClickHandler(e){
-                e = e||window.event;
-                var tdElm = e.target||e.srcElement;
-                if(true){
-                    tdElm.style.backgroundColor = '#00b5ef';
+            if(tdElm.style.backgroundColor == 'rgb(0, 255, 0)'){
+                    tdElm.style.backgroundColor = null;
+                }
+                else{
+                    tdElm.style.backgroundColor = '#0f0';
                 }
             }
         </script>
