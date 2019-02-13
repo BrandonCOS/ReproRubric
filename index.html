@@ -219,8 +219,8 @@
             function inputClickHandler(e){
                 e = e||window.event;
                 var tdElm = e.target||e.srcElement;
-                if(background-color == '#ffffff'){
-                    background-color = '#00b5ef';
+                if(tdElm.style.backgroundcolor === '#ffffff'){
+                    tdElm.style.backgroundcolor = '#00b5ef';
                 }
             }
             $( document ).ready(function(){
