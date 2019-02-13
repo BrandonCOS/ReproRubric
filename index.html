@@ -219,11 +219,11 @@
             function inputClickHandler(e){
                 e = e||window.event;
                 var tdElm = e.target||e.srcElement;
-                if(tdElm.style.backgroundColor == '#ffffff'){
+                if(tdElm.style.backgroundColor == ''){
                     tdElm.style.backgroundColor = '#00b5ef';
                 }
                 else{
-                    tdElm.style.backgroundColor = null
+                    tdElm.style.backgroundColor = null;
                 }
             }
             $( document ).ready(function(){
